@@ -25,4 +25,6 @@ ENV NODE_ENV development
 EXPOSE 80
 
 ## The command uses nodemon to run the application
+RUN ["chmod", "+x", "start.sh"]
 CMD ["./start.sh"]
+
