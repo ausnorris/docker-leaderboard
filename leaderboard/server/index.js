@@ -30,7 +30,7 @@ connection.createFetchQuery('players', {}, {}, function(err, results) {
   if (err) { throw err; }
 
   if (results.length === 0) {
-    var names = ['Scott "Roundhouse" Norris', 'Chris "Spicy" Slater', 'Grant "Angry" Orchard'];
+    var names = ['Scott "Roundhouse" Norris', 'Chris "Spicy" Slater', 'Grant "Angry" Orchard', 'none of the above'];
 
     names.forEach(function(name, index) {
       var doc = connection.get('players', ''+index);
