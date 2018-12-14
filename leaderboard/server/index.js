@@ -15,7 +15,7 @@ var app = connect();
 app.use(serveStatic('.'));
 var server = http.createServer(app);
 var wss = new WebSocket.Server({server: server});
-server.listen(80);
+server.listen(81);
 console.log("Listening on http://localhost:8080");
 
 // Connect any incoming WebSocket connection with ShareDB
